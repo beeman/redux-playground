@@ -3,10 +3,12 @@ import { useDispatch, useSelector } from 'react-redux'
 
 // Reducers from our feature slices
 import { counterReducer } from './features/counter-redux/counter-slice.ts'
+import { todoReducer } from './features/todo-redux/todo-slide.ts'
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
+    todo: todoReducer,
   },
 })
 

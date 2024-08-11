@@ -19,11 +19,11 @@ function AppHeader() {
     <header>
       <nav className="navbar navbar-expand bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link to="/" replace className="navbar-brand">
             Redux Playground
-          </a>
+          </Link>
           <div className="collapse navbar-collapse">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto">
               {pages.map(({ path, label }) => (
                 <li className="nav-item" key={path}>
                   <Link key={path} to={path} className={`nav-link ${pathname === path ? 'active' : ''}`}>
